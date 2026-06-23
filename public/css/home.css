@@ -1,0 +1,128 @@
+@import 'tailwindcss';
+@source "../../views/**/*.html";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:whitesmoke;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100vh;
+    width:100vw;
+    gap:10%;
+   
+}
+header{
+    padding: 25px;
+    width:100vw;
+    background-color: rgb(241, 73, 101);
+    box-shadow: 0px 0px 15px 5px pink;
+}
+
+.add-home{
+    background-color:whitesmoke;
+    width:70%;
+   
+    border-radius:10px;
+    box-shadow: 0px 0px 15px 5px rgba(128, 128, 128, 0.079);
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    justify-content: center;
+    align-items: center;
+    padding:25px;
+}
+.home-added{
+   
+    padding: 35px;
+    display: flex;
+   flex-wrap: wrap  ;
+    gap:20px;
+}
+.home-img{
+    height:300px;
+    width:300px;
+}
+.home-btn{
+    background-color: rgb(224, 13, 48);
+    color:white;
+    padding: 3px;
+    width:100px;
+    border-radius:5px;
+}
+.home-h1{text-align: left;
+
+}
+.home{
+    background-color: white;
+    padding:20px;
+    
+    box-shadow:0px 0px 5px 5px rgba(128, 128, 128, 0.19);
+    border-radius:7px;
+}
+strong
+{
+    display: flex;
+    justify-content:space-between ;
+    color:black;
+}
+a{
+    color:white;
+    text-align: center;
+    background-color: blue;
+    border-radius:5px;
+    padding: 5px;
+}
+h1{
+color: white;
+font-weight: bold;
+text-align: center;
+
+}
+.detail-h1{
+    color:red;
+    font-size:25px;
+}
+.details{
+    display: flex;
+}
+.detail-img{
+    height:440px;
+    width: 400px;
+}
+.detail-p{
+  color:red;
+  width: 160px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.226);;
+}
+.detail-p-div{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    color:red;
+    font-weight: bold;
+    font-size: 25px;;
+}
+.home-h1{
+    color:red;
+    font-size:25px;
+    
+}
+.home-p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}

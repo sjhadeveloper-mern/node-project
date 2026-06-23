@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See Your Home</title>
+    <link rel="stylesheet" href="/css/output.css">
+</head>
+<body>
+      <div class="container">
+        <div class="main">
+            <header>
+    <h1>Welcome to Airbnb</h1>
+    </header>
+    <div class="add-home">
+      
+  <h2>Home Added Successfully🎯</h2>
+<div class="home-added">
+<% users.forEach((user)=>{%>
+      
+
+<div class="home">
+<img class="home-img" src="<%= user.image %>" alt="home-image">
+<%- include('partials/favourite', { home: user }) %>
+    <strong> <%= user.username %>  <p><span>⭐</span> <%= user.rating %></p></strong>
+    
+    <p><span>$</span> <%= user.price %><span>/night</span> </p>
+    
+    <p><%= user.Location %></p>
+    <a class="home-btn"  href="/homes/<%= user.id %>">BOOK</a>
+</div>
+
+
+
+
+
+
+<%})%>
+</div>
+
+
+ 
+
+            <a href="/">return to home</a>
+            </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

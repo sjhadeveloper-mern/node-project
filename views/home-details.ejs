@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb:- Home Details</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+    <%- include('partials/header') %>
+
+    <h1 class="detail-h1">Here's your registered Homes Details: </h1>
+<div class="details">
+
+
+<div class="detail-img-div">
+
+<img class="detail-img" src="<%= home.image %>" alt="home-img">
+
+
+
+
+</div>
+<div class="detail-p-div">
+
+<p  class="detail-p"><strong>Home: </strong><%= home.username %></p>
+<p class="detail-p"><strong>Price: </strong><%= home.price %></p>
+<p class="detail-p"><strong>rating:</strong> <%= home.rating %></p>
+<p class="detail-p"><strong>Location:</strong> <%= home.Location %></p>
+<p class="detail-p"><strong>description:</strong>This is very wonderful home in low budget. kindly explore these homes.</p>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+    </div>
+    </div>
+</body>
+</html>

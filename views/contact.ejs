@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book your home</title>
+    <link rel="stylesheet" href="/css/output.css">
+</head>
+<body>
+
+    <div class="containerr  h-screen w-screen flex  flex-col gap-25 0 items-center">
+<%- include('partials/header') %>
+
+
+
+        <div class="mainn bg-white h-[350px] w-[300px] shadow-2xl rounded-xl flex items-center justify-center">
+     <form action="/contact/submit-details" method="post" class="">
+    <div class="flex flex-col gap-10  ">
+        <h2 class="text-center font-bold text-xl">Add Your Home </h2>
+        <div class="flex flex-col gap-3">
+    <input type="text" class="border border-2  border-pink-500 h-7" name="username" placeholder="Enter Your Home">
+     <input type="number" class="border border-2 border-pink-500 h-7" name="price" placeholder="Enter Your Price">
+      <input type="number" class="border border-2 border-pink-500 h-7" name="rating" placeholder="Enter Your Rating">
+        <input type="text" class="border border-2 border-pink-500 h-7" name="Location" placeholder="Enter Your Location">
+       <input type="text" class="border border-2 border-pink-500 h-7" name="image" placeholder="Enter Your Image">
+       
+
+     </div>
+    <button class="bg-red-500 h-7 w-49 text-white" type="submit">submit</button>
+    </div>
+    </form>
+    </div>
+    </div>
+</body>
+</html>
